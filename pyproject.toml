@@ -1,0 +1,21 @@
+# pyproject.toml
+[tool.poetry]
+name = "yt-audio-downloader"
+version = "0.1.0"
+description = "Download audio from YouTube URLs defined in a YAML file"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "yt_audio_downloader"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyyaml = "^6.0"
+yt-dlp = {version = "^2025.11.0", extras = ["default"]}
+rich = "^13.7.0"
+
+[tool.poetry.scripts]
+yt-download = "yt_audio_downloader.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,9 @@
+cat << 'EOF' > example.yaml
+# Example YAML file for yt-audio-downloader
+sources:
+  - name: Example Song
+    name_en: Example Song English
+    user: Artist Name
+    user_en: Artist Name English
+    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+EOF
